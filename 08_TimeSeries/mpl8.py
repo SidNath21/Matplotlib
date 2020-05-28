@@ -5,7 +5,7 @@ from matplotlib import dates as mpl_dates
 
 plt.style.use('seaborn')
 
-data = pd.read_csv('TimeSeries/data.csv')
+data = pd.read_csv('08_TimeSeries/data.csv')
 
 data['Data'] = pd.to_datetime(data['Date'])
 data.sort_values('Date', inplace = True)
@@ -21,7 +21,7 @@ plt.title('Bitcoin Prices')
 plt.xlabel('Date')
 plt.ylabel('Closing Price')
 
-plt.savefig("TimeSeries/plot.png")
+plt.savefig("08_TimeSeries/plot.png")
 
 plt.tight_layout()
 

@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 
 plt.style.use('fivethirtyeight')
 
-data = pd.read_csv('Histograms/data.csv')
+data = pd.read_csv('06_Histograms/data.csv')
 ids = data['Responder_id']
 ages = data['Age']
 
@@ -22,7 +22,7 @@ plt.title('Ages of Respondents')
 plt.xlabel('Ages')
 plt.ylabel('Total Respondents')
 
-plt.savefig("Histograms/plot.png")
+plt.savefig("06_Histograms/plot.png")
 
 plt.tight_layout()
 

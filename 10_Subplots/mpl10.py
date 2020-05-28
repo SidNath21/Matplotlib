@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 
 plt.style.use('seaborn')
 
-data = pd.read_csv('Subplots/data.csv')
+data = pd.read_csv('10_Subplots/data.csv')
 ages = data['Age']
 dev_salaries = data['All_Devs']
 py_salaries = data['Python']
@@ -28,8 +28,8 @@ ax2.legend()
 ax2.set_xlabel('Ages')
 ax2.set_ylabel('Median Salary (USD)')
 
-fig1.savefig("Subplots/fig1.png")
-fig2.savefig("Subplots/fig2.png")
+fig1.savefig("10_Subplots/fig1.png")
+fig2.savefig("10_Subplots/fig2.png")
 
 plt.tight_layout()
 

@@ -17,8 +17,8 @@ plt.stackplot(minutes, player1, player2, player3, labels=labels, colors=colors)
 
 plt.legend(loc=(0.08, 0.05))
 
-plt.title("My Awesome Stack Plot")
-plt.savefig("StackPlots/plot.png")
+plt.title("Stack Plot")
+plt.savefig("04_StackPlots/plot.png")
 plt.tight_layout()
 plt.show()
 

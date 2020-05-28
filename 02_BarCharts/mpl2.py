@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 plt.style.use("fivethirtyeight")
 
-data = pd.read_csv("BarCharts/data.csv")
+data = pd.read_csv("02_BarCharts/data.csv")
 ids = data["Responder_id"]
 lang_responses = data["LanguagesWorkedWith"]
 
@@ -28,7 +28,7 @@ popularity.reverse()
 plt.barh(languages, popularity)
 plt.title("Most Popular Languages")
 plt.xlabel("Number of People")
-plt.savefig("BarCharts/plot.png")
+plt.savefig("02_BarCharts/plot.png")
 
 plt.tight_layout()
 plt.show()

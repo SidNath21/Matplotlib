@@ -10,6 +10,6 @@ explode = [0, 0, 0, 0.1, 0]
 plt.pie(slices, labels=labels, explode=explode, shadow=True, startangle=180, autopct='%1.1f%%' ,wedgeprops={'edgecolor' : 'black'})
 
 plt.title("My Awesome Pie Chart")
-plt.savefig("PieCharts/plot.png")
+plt.savefig("03_PieCharts/plot.png")
 plt.tight_layout()
 plt.show()

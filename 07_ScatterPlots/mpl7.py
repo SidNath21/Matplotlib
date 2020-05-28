@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 plt.style.use('seaborn')
 
 
-data = pd.read_csv('Scatterplots/data.csv')
+data = pd.read_csv('07_Scatterplots/data.csv')
 view_count = data['view_count']
 likes = data['likes']
 ratio = data['ratio']
@@ -21,7 +21,7 @@ cbar.set_label("Like/Dislike Ratio")
 plt.xscale('log')
 plt.yscale('log')
 
-plt.savefig("ScatterPlots/plot.png")
+plt.savefig("07_ScatterPlots/plot.png")
 
 plt.tight_layout()
 

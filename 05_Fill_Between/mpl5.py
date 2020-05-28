@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 
-data = pd.read_csv('Fill_Between/data.csv')
+data = pd.read_csv('05_Fill_Between/data.csv')
 ages = data['Age']
 dev_salaries = data['All_Devs']
 py_salaries = data['Python']
@@ -27,7 +27,7 @@ plt.legend()
 plt.title('Median Salary (USD) by Age')
 plt.xlabel('Ages')
 plt.ylabel('Median Salary (USD)')
-plt.savefig("Fill_Between/plot.png")
+plt.savefig("05_Fill_Between/plot.png")
 
 plt.tight_layout()
 

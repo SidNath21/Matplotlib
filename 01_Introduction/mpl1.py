@@ -32,7 +32,7 @@ plt.title("Median Salary (USD) by Age")
 plt.legend()
 # plt.grid(True)
 
-plt.savefig("Introduction/plot.png")
+plt.savefig("01_Introduction/plot.png")
 
 plt.tight_layout()
 plt.show()

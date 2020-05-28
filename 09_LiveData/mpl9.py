@@ -15,7 +15,7 @@ plt.plot(x_vals, y_vals)
 index = count()
 
 def animate(i):
-    data = pd.read_csv('LiveData/data.csv')
+    data = pd.read_csv('09_LiveData/data.csv')
     x = data['x_value']
     y1 = data['total_1']
     y2 = data['total_2']
@@ -30,6 +30,7 @@ def animate(i):
 
 ani = FuncAnimation(plt.gcf(), animate, interval = 1000 )
 
+plt.savefig("09_LiveData/plot.png")
 plt.tight_layout()
 plt.show()
 
